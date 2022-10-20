@@ -1,6 +1,7 @@
 package com.example.pianifit_android_f22_class.ui.home
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -32,6 +33,11 @@ class HomeFragment : Fragment() {
         homeViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+
+        binding.btnStartPlan.setOnClickListener {
+            Log.d("Tag", "New Plan Selected")
+        }
+
         return root
     }
 
