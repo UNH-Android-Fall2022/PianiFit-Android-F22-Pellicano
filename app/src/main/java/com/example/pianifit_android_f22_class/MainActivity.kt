@@ -13,6 +13,11 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    companion object{ // Global Variables
+
+        private val TAG = "PianiFitAndroidF22Tag"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

@@ -1,5 +1,6 @@
 package com.example.pianifit_android_f22_class.ui.home
 
+import android.content.ContentValues.TAG
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -35,7 +36,7 @@ class HomeFragment : Fragment() {
         }
 
         binding.btnStartPlan.setOnClickListener {
-            Log.d("Tag", "New Plan Selected")
+            Log.d(TAG, "New Plan Selected")
         }
 
         return root
