@@ -32,5 +32,9 @@
     <fragment
         android:id="@+id/planFragment"
         android:name="com.example.pianifit_android_f22_class.ui.plan.PlanFragment"
-        android:label="PlanFragment" />
+        android:label="PlanFragment" >
+        <action
+            android:id="@+id/action_planFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
 </navigation>

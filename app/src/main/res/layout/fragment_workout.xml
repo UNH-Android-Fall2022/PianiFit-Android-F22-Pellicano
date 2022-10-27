@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".ui.workout.WorkoutFragment">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_workouts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/saved_workout"
+        android:clipToPadding="false"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"/>
+
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
